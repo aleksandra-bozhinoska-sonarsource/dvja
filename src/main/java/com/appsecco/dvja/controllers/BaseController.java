@@ -28,7 +28,6 @@ public class BaseController extends ActionSupport implements ServletRequestAware
     @Override
     public void setSession(Map<String, Object> session) {
         this.session = session;
-
     }
 
     public HttpServletRequest getServletRequest() {
