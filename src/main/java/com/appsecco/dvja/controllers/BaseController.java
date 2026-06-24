@@ -48,6 +48,7 @@ public class BaseController extends ActionSupport implements ServletRequestAware
     }
 
     public User sessionGetUser() {
+
         return ((User) getSession().get(Constant.SESSION_USER_HANDLE));
     }
 
