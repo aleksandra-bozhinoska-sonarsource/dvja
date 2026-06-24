@@ -44,6 +44,7 @@ public class BaseController extends ActionSupport implements ServletRequestAware
     }
 
     public void sessionSetUser(User user) {
+
         session.put(Constant.SESSION_USER_HANDLE, user);
     }
 
