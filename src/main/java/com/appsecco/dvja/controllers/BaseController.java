@@ -59,6 +59,7 @@ public class BaseController extends ActionSupport implements ServletRequestAware
 
     public String renderText(String txtMessage) {
         try {
+
             ServletActionContext.getResponse().getWriter().write(txtMessage);
         } catch (IOException e) {
             e.printStackTrace();
