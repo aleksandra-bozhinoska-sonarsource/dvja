@@ -54,6 +54,7 @@ public class BaseController extends ActionSupport implements ServletRequestAware
     }
 
     public void sessionRemoveUser() {
+
         session.remove(Constant.SESSION_USER_HANDLE);
     }
 
