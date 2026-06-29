@@ -69,7 +69,6 @@ public class BaseController extends ActionSupport implements ServletRequestAware
 
     public String renderJSON(Map jsonMap) {
         Gson gson = new GsonBuilder().create();
-
         try {
             ServletActionContext.getResponse().addHeader("Content-Type", "application/json");
             ServletActionContext.getResponse().getWriter().write(gson.toJson(jsonMap));
