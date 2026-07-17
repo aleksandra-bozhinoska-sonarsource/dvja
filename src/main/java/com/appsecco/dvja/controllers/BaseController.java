@@ -73,6 +73,7 @@ public class BaseController extends ActionSupport implements ServletRequestAware
             ServletActionContext.getResponse().addHeader("Content-Type", "application/json");
             ServletActionContext.getResponse().getWriter().write(gson.toJson(jsonMap));
         } catch (IOException e) {
+
             e.printStackTrace();
         }
 
