@@ -17,6 +17,7 @@ import java.util.Map;
 public class BaseController extends ActionSupport implements ServletRequestAware, SessionAware {
 
     private HttpServletRequest servletRequest;
+    private HttpServletRequest testVariable;
     private Map<String, Object> session;
 
     public Map<String, Object> getSession() {
@@ -28,6 +29,7 @@ public class BaseController extends ActionSupport implements ServletRequestAware
     @Override
     public void setSession(Map<String, Object> session) {
         this.session = session;
+
     }
 
     public HttpServletRequest getServletRequest() {
