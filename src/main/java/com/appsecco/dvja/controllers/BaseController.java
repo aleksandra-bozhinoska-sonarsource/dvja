@@ -17,6 +17,7 @@ import java.util.Map;
 public class BaseController extends ActionSupport implements ServletRequestAware, SessionAware {
 
     private HttpServletRequest servletRequest;
+    private HttpServletRequest test;
     private Map<String, Object> session;
 
     public Map<String, Object> getSession() {
